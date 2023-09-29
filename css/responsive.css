@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* RESPONSIVE - 768PX */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
