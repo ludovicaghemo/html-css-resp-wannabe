@@ -1,10 +1,10 @@
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* RESPONSIVE - 768px */
+/* RESPONSIVE - Tablet: 768px */
 
 @media screen and (max-width: 768px) {
     .container {
@@ -12,7 +12,7 @@
     }
 }
 
-/* RESPONSIVE - 480px */
+/* RESPONSIVE - Mobile 480px */
 
 @media screen and (max-width: 480px) {
     h2 {
@@ -25,25 +25,25 @@
     
     .row {
         display: block;
+        /* in generale sarebbe cmq meglio mettere flex-wrap: wrap; */
     }
 
-    .lessons .col {
-        width: 100%;
-        padding-bottom: 4rem;
-    }
-
-    .steps .col {
-        width: 100%;
-        padding-bottom: 4rem;
-    }
-
-    .why-us .col-left {
-        width: 100%;
-        padding-bottom: 4rem;
-    }
-
+    .lessons .col,
+    .steps .col,
+    .why-us .col-left,
     .why-us .col-right {
         width: 100%;
+        padding-bottom: 4rem;
+    }
+
+    .steps {
+        margin-bottom: 0;
+    }
+
+    .why-us {
+        background-color: #000;
+        padding: 4rem 0;
+        margin-bottom: 0;
     }
 }
 
